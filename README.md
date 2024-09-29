@@ -1,3 +1,7 @@
+# Debug Note
+gcc version 12.3.0
+for conda user, try "conda install -c conda-forge gcc=12.3.0"
+
 # ExoVista v2.4
 August 11, 2023
 Alex Howe & Chris Stark
