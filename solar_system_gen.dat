@@ -1,5 +1,5 @@
 Star
-ID      1195
+ID      1188
 HIP     -1
 TYC2    SUN
 dist    10.
@@ -12,7 +12,7 @@ Teff    5778.
 mass    1.0
 rstar   1.0
 PA      0.0
-I       90
+I       0
 Planets
   M        R       a            e             i          longnode    argperi     meananom    albedo
   0.0553   0.383   0.387099     0.205625      7.003625   48.302049   29.188230  174.79439    Mars

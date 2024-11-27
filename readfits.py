@@ -7,7 +7,7 @@ import os
 import sys
 import time
 
-filename = '999-HIP_-TYC_SUN-mv_4.83-L_1.00-d_10.00-Teff_5778.00.fits'
+filename = '0-HIP_-TYC_SUN-mv_4.83-L_1.00-d_10.00-Teff_5778.00.fits'
 
 planetcolors = {'Archean_Earth':(0.0,1.0,0.0),'Earth':(0.0,1.0,0.0),'Hazy_Archean_Earth':(0.0,1.0,0.0),'Proterozoic_Earth-hi_o2':(0.0,1.0,0.0),
                 'Proterozoic_Earth-lo_o2':(0.0,1.0,0.0),'Venus':(1.0,1.0,0.0),'Mars':(1.0,0.0,0.0),'Early_Mars':(1.0,0.0,0.0),
@@ -17,7 +17,7 @@ planetcolors = {'Archean_Earth':(0.0,1.0,0.0),'Earth':(0.0,1.0,0.0),'Hazy_Archea
 plt.style.use('dark_background')
 plt.rcParams['animation.embed_limit'] = 2**128
 
-lambda_ref    = 0.50  # reference wavelength in microns
+lambda_ref    = 0.575  # reference wavelength in microns
 mirror_size   = 8.0   # mirror diameter in meters
 disk_gain     = 1.0   # multiplies the brightness of the disk image
 log_disk      = False # color the disk brightness on a logarithmic scale
@@ -162,8 +162,8 @@ ax.set_xlim(0,250)
 ax.set_ylim(0,250)
 plt.subplots_adjust(left=0.001, bottom=0.001, right=0.999, top=0.999, wspace=0, hspace=0)
 
-xc = np.arange(0,251)
-yc = np.arange(0,251)
+xc = np.arange(0,911)
+yc = np.arange(0,911)
 ax.pcolor(xc,yc,disk,cmap='inferno')
 
 coords = np.zeros((nplanets,2,ntimes))
@@ -290,11 +290,11 @@ if version >= 2.2:
                 print('Planet {0:d} {1:s} in progress at {2:.2f} days'.format(int(transits[1,i]),event,transits[0,i]))
             else: print('Error in event format at {2:.2f} days'.format(transits[0,i]))
 
-'''
+
 fig.savefig('disk_image.png')
 fig2.savefig('disk_profile.png')
 fig3.savefig('planet_spectra.png')
 fig4.savefig('phase_curves.png')
 fig5.savefig('planet_motions.png')
-'''
+
 plt.show()

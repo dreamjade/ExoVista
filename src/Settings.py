@@ -4,10 +4,10 @@ from dataclasses import dataclass, field
 class Settings():
 
     # imaging and spectroscopy parameters
-    pixscale:     float = 0.002
+    pixscale:     float = 0.0013294411340138672
     iwa:          float = 0.015
     iwa_tol:      float = 0.1
-    npix:           int = 250
+    npix:           int = 455*2
     specres:      float = 300.
     specrdisk:    float = 10.
     lambdamin:    float = 0.3
