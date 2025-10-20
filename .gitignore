@@ -1,3 +1,4 @@
 /output/*
-/*.ipynb
+!/output/300-HIP_-TYC_SUN-mv_4.83-L_1.00-d_10.00-Teff_5778.00.fits
+!/output/360-HIP_-TYC_SUN-mv_4.83-L_1.00-d_10.00-Teff_5778.00.fits
 455_exovista.h5
